@@ -1,0 +1,50 @@
+
+
+<script>
+    var a = +prompt('Введите первое число');
+    var b = +prompt('Введите второе число');
+
+    function sum(a,b){
+    return a + b;
+    }
+
+    function minus(a,b){
+        return a - b;
+    }
+
+    function umnozh(a,b){
+        return a * b;
+    }
+
+    function delen(a,b){
+        return a / b;
+    }
+
+
+function MathOperation(arg1, arg2, operation){
+
+            switch(operation){
+                 case '+':
+                     alert(sum(arg1,arg2));
+                     break;
+                 case '-':
+                     alert(minus(arg1,arg2));
+                     break;
+                 case '*':
+                     alert(umnozh(arg1,arg2));
+                     break;
+                 case '/':
+                     alert(delen(arg1,arg2));
+                     break;
+              default :
+                  alert ('выбрана не верная операция');
+                break;
+            }
+    }
+
+MathOperation(a, b, prompt('Введите необходимую операцию: +, -, *, /'));
+
+
+
+
+</script>
