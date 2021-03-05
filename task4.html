@@ -1,3 +1,4 @@
+<!-- 
 <script>
     var a = prompt('Введите цисло от 0 до 15');
     switch(a){
@@ -38,3 +39,19 @@
             console.log('Не корректное значение');
     }
 </script>
+ -->
+
+ <script>
+     //вариант через рекурсию
+     var a = (Math.random() * 15).toFixed(0); //10
+     function alter(a) {
+         if (a == 15) {
+             document.write(a);
+             return;
+         }
+         document.write(a++ + "");
+         alter(a);
+     }
+     alter(a);
+
+ </script>
